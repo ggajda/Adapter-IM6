@@ -32,13 +32,13 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>16</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
-     <string>Test</string>
+     <string>Load data</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tableWidget">
@@ -46,19 +46,12 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>751</width>
+      <width>761</width>
       <height>421</height>
      </rect>
     </property>
     <property name="columnCount">
      <number>3</number>
-    </property>
-    <property name="setHorizontalHeaderLabels" stdset="0">
-     <stringlist>
-      <string>a</string>
-      <string>b</string>
-      <string>c</string>
-     </stringlist>
     </property>
     <attribute name="horizontalHeaderCascadingSectionResizes">
      <bool>false</bool>

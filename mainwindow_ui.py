@@ -37,14 +37,14 @@ class Ui_MainWindow(object):
         self.pushButtonTest.setObjectName(u"pushButtonTest")
         self.pushButtonTest.setGeometry(QRect(300, 480, 161, 51))
         font = QFont()
-        font.setPointSize(16)
-        font.setBold(True)
+        font.setPointSize(14)
+        font.setBold(False)
         self.pushButtonTest.setFont(font)
         self.tableWidget = QTableWidget(self.centralwidget)
         if (self.tableWidget.columnCount() < 3):
             self.tableWidget.setColumnCount(3)
         self.tableWidget.setObjectName(u"tableWidget")
-        self.tableWidget.setGeometry(QRect(20, 20, 751, 421))
+        self.tableWidget.setGeometry(QRect(20, 20, 761, 421))
         self.tableWidget.setColumnCount(3)
         self.tableWidget.horizontalHeader().setCascadingSectionResizes(False)
         self.tableWidget.horizontalHeader().setDefaultSectionSize(200)
@@ -72,11 +72,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Adapter - IM6", None))
         self.actionClose.setText(QCoreApplication.translate("MainWindow", u"Close", None))
-        self.pushButtonTest.setText(QCoreApplication.translate("MainWindow", u"Test", None))
-        self.tableWidget.setProperty("setHorizontalHeaderLabels", [
-            QCoreApplication.translate("MainWindow", u"a", None),
-            QCoreApplication.translate("MainWindow", u"b", None),
-            QCoreApplication.translate("MainWindow", u"c", None)])
+        self.pushButtonTest.setText(QCoreApplication.translate("MainWindow", u"Load data", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
     # retranslateUi
 

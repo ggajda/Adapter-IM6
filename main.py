@@ -3,12 +3,7 @@ import sys
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QFile, QIODevice
-from btn import Btn
-
-
-def qtObj_actions(window):
-    pass
-    # btn = Btn(window)
+from dialog import Dialog
 
 
 def main():
@@ -21,8 +16,7 @@ def main():
         sys.exit(-1)
     loader = QUiLoader()
     window = loader.load(ui_file)
-    btn = Btn(window)
-    qtObj_actions(window)
+    dialog = Dialog(window)
     ui_file.close()
     if not window:
         print(loader.errorString())
