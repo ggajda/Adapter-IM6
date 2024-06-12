@@ -1,4 +1,4 @@
-from sql_query import query_action
+from sql.sql_actions import query_read_person
 
 
 class Btn:
@@ -8,4 +8,4 @@ class Btn:
         self.window.pushButtonTest.clicked.connect(self.handel_btn)
 
     def handel_btn(self):
-        query_action()
+        query_read_person(self.window)
