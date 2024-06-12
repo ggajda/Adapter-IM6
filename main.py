@@ -6,6 +6,11 @@ from PySide6.QtCore import QFile, QIODevice
 from btn import Btn
 
 
+def qtObj_actions(window):
+    pass
+    # btn = Btn(window)
+
+
 def main():
     app = QApplication(sys.argv)
 
@@ -16,13 +21,13 @@ def main():
         sys.exit(-1)
     loader = QUiLoader()
     window = loader.load(ui_file)
+    btn = Btn(window)
+    qtObj_actions(window)
     ui_file.close()
     if not window:
         print(loader.errorString())
         sys.exit(-1)
     window.show()
-
-    btn = Btn(window)
 
     sys.exit(app.exec())
 
