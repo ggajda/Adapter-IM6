@@ -16,9 +16,8 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QMainWindow,
-    QMenu, QMenuBar, QSizePolicy, QStatusBar,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QMainWindow, QMenu, QMenuBar,
+    QPushButton, QSizePolicy, QStatusBar, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -33,27 +32,13 @@ class Ui_MainWindow(object):
         self.actionClose.setObjectName(u"actionClose")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.horizontalLayoutWidget_2 = QWidget(self.centralwidget)
-        self.horizontalLayoutWidget_2.setObjectName(u"horizontalLayoutWidget_2")
-        self.horizontalLayoutWidget_2.setGeometry(QRect(0, 0, 291, 571))
-        self.horizontalLayout_2 = QHBoxLayout(self.horizontalLayoutWidget_2)
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.labelPatientID = QLabel(self.horizontalLayoutWidget_2)
-        self.labelPatientID.setObjectName(u"labelPatientID")
-
-        self.horizontalLayout_2.addWidget(self.labelPatientID)
-
-        self.labelPatient = QLabel(self.horizontalLayoutWidget_2)
-        self.labelPatient.setObjectName(u"labelPatient")
+        self.pushButtonTest = QPushButton(self.centralwidget)
+        self.pushButtonTest.setObjectName(u"pushButtonTest")
+        self.pushButtonTest.setGeometry(QRect(290, 200, 161, 101))
         font = QFont()
-        font.setPointSize(12)
+        font.setPointSize(16)
         font.setBold(True)
-        self.labelPatient.setFont(font)
-        self.labelPatient.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
-
-        self.horizontalLayout_2.addWidget(self.labelPatient)
-
+        self.pushButtonTest.setFont(font)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -74,10 +59,9 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"IM6 EXT", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Adapter - IM6", None))
         self.actionClose.setText(QCoreApplication.translate("MainWindow", u"Close", None))
-        self.labelPatientID.setText(QCoreApplication.translate("MainWindow", u"Patieien ID", None))
-        self.labelPatient.setText(QCoreApplication.translate("MainWindow", u"Patient Data", None))
+        self.pushButtonTest.setText(QCoreApplication.translate("MainWindow", u"Test", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"File", None))
     # retranslateUi
 

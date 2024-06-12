@@ -14,48 +14,32 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>IM6 EXT</string>
+   <string>Adapter - IM6</string>
   </property>
   <property name="windowIcon">
    <iconset>
     <normaloff>resources/favicon.ico</normaloff>resources/favicon.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <widget class="QPushButton" name="pushButtonTest">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>291</width>
-      <height>571</height>
+      <x>290</x>
+      <y>200</y>
+      <width>161</width>
+      <height>101</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QLabel" name="labelPatientID">
-       <property name="text">
-        <string>Patieien ID</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="labelPatient">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Patient Data</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignHCenter|Qt::AlignTop</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Test</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

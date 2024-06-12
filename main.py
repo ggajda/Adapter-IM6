@@ -3,6 +3,7 @@ import sys
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QFile, QIODevice
+from btn import Btn
 
 
 def main():
@@ -20,6 +21,8 @@ def main():
         print(loader.errorString())
         sys.exit(-1)
     window.show()
+
+    btn = Btn(window)
 
     sys.exit(app.exec())
 
