@@ -16,6 +16,5 @@ def query_read_person(window):
         window.tableWidget.setItem(tablerow, 1, QTableWidgetItem(row[1]))
         window.tableWidget.setItem(tablerow, 2, QTableWidgetItem(row[2]))
         tablerow += 1
-        print(row[0])
 
     db.db_disconnect()
