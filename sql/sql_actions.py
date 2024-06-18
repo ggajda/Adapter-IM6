@@ -9,7 +9,7 @@ def query_read_person(window):
     cursor = db.db_connect()
 
     rows = cursor.fetchall()
-    window.tableWidget.setRowCount(len(rows) + 1)
+    window.tableWidget.setRowCount(len(rows))
     tablerow = 0
     for row in rows:
         window.tableWidget.setItem(tablerow, 0, QTableWidgetItem(row[0]))

@@ -56,6 +56,9 @@
         <attribute name="horizontalHeaderHighlightSections">
          <bool>false</bool>
         </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>45</number>
+        </attribute>
         <attribute name="horizontalHeaderStretchLastSection">
          <bool>false</bool>
         </attribute>
