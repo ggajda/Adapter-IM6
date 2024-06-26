@@ -11,7 +11,7 @@ class Dialog:
 
         # tabelWidget
         self.columns_name = ["ID", "First Name", "Last Name"]
-        self.window.tableWidget.horizontalHeader().resizeSection(0, 50)
+        # self.window.tableWidget.horizontalHeader().resizeSection(0, 50)
         self.window.tableWidget.setColumnCount(len(self.columns_name))
         self.window.tableWidget.setHorizontalHeaderLabels(self.columns_name)
         self.window.tableWidget.itemDoubleClicked.connect(
